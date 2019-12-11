@@ -1,0 +1,23 @@
+<form>
+  <div>
+    <label for="pays">Nom du jeu</label>
+    <input type="text" id="game_name" name="game_name" placeholder="Nom du jeu...">
+  </div>
+
+  <div>
+    <label for="pays">Quel est le type du jeu ?</label>
+        <select name="pays" id="type">
+            <option *ngFor="let choice of choices; index as i">{{ choice }}</option>
+        </select>
+  </div>
+
+  <div>
+    <label for="pays">Editeur</label>
+    <input type="text" id="editeur" name="editeur" placeholder="Editeur...">
+  </div>
+  
+  <div>
+    <input class="button" type="submit" value="filter">
+    <input class="button" type="submit" value="RAZ">
+  </div>
+</form>
